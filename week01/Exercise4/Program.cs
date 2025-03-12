@@ -19,9 +19,9 @@ class Program
 
         // Calculate the sum
         int sum = 0;
-        foreach (int num in numbers)
+        foreach (int number in numbers)
         {
-            sum += num;
+            sum += number;
         }
 
         Console.WriteLine($"The sum of the numbers is: {sum}");
@@ -32,11 +32,11 @@ class Program
 
         // Find the maximum number
         int maxNumber = numbers[0];
-        foreach (int num in numbers)
+        foreach (int number in numbers)
         {
-            if (num > maxNumber)
+            if (number > maxNumber)
             {
-                maxNumber = num;
+                maxNumber = number;
             }
         }
 
@@ -54,7 +54,7 @@ class Program
 
         Console.WriteLine($"The smallest positive number is: {smallestPositive}");
 
-        // Sort the list
+        // Sort the list of numbers
         numbers.Sort();
         Console.WriteLine("The sorted numbers are: " + string.Join(", ", numbers));
     }
