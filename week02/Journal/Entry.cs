@@ -1,14 +1,14 @@
-using System;  // Importing System namespace for basic C# functionality
+using System;
 
 // Define the Entry class to represent a single journal entry
 public class Entry
 {
-    // Properties to store the date, prompt, and response
+    // Properties to store the date, prompt, and response from the user(s)
     public string Date { get; set; }
     public string Prompt { get; set; }
     public string Response { get; set; }
 
-    // Constructor to initialize an entry when created
+    // This will store the entry date, prompt, and response from the user.
     public Entry(string date, string prompt, string response)
     {
         Date = date;
