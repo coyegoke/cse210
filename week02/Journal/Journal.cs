@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
-using System.IO;  // Needed for file handling
+using System.IO;
 
-// Define the Journal class
+
 public class Journal
 {
-    // List to store multiple entries
+    // Create list to store multiple entries
     private readonly List<Entry> entries = new List<Entry>();
 
     // Method to add a new entry to the list
@@ -25,7 +25,7 @@ public class Journal
 
         foreach (var entry in entries)
         {
-            entry.Display();  // Calls the Display method from the Entry class
+            entry.Display();  // This line of code calls the Display method from the Entry class
         }
     }
 
@@ -48,7 +48,7 @@ public class Journal
         if (!File.Exists(fileName))  // Check if file exists
         {
             Console.WriteLine("File not found.");
-            return;
+            return; // This goes back to the menu options
         }
 
         entries.Clear();  // Remove existing entries before loading new ones
@@ -57,7 +57,7 @@ public class Journal
 
         foreach (string line in lines)
         {
-            string[] parts = line.Split('|');  // Split the line using "|"
+            string[] parts = line.Split('|');  // Split the line using "|" separator
             if (parts.Length == 3)
             {
                 entries.Add(new Entry(parts[0], parts[1], parts[2]));
