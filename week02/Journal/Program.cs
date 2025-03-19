@@ -8,7 +8,7 @@ class Program
         Journal myJournal = new Journal();
         PromptGenerator promptGen = new PromptGenerator();
 
-        while (true)  // Infinite loop to keep showing the menu
+        while (true)  // Using the While loop to keep showing the menu until the Option 5 (Exit) is chosen.
         {
             Console.WriteLine("\nJournal Menu:");
             Console.WriteLine("1. Write a new entry");
@@ -20,7 +20,7 @@ class Program
 
             string choice = Console.ReadLine();
 
-            switch (choice)
+            switch (choice) // This handles the different Menu available
             {
                 case "1":
                     string prompt = promptGen.GetRandomPrompt();
