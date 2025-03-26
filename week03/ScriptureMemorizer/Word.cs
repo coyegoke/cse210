@@ -9,7 +9,7 @@ class Word
         _isHidden = false;
     }
 
-    public void Hide()
+    public void Hide() //This ensure/marks a word as hidden.
     {
         _isHidden = true;
     }
@@ -25,6 +25,7 @@ class Word
     }
 
     public string GetDisplayText()
+    //This displays either the word itself or an underscore version of the word if hidden.
     {
         return _isHidden ? new string('_', _text.Length) : _text;
     }

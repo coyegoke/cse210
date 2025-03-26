@@ -6,6 +6,7 @@ class Reference
     private int? _endVerse;
 
     public Reference(string book, int chapter, int verse, int? endVerse = null)
+    //A constructor that allows for both single verse and verse ranges.
     {
         _book = book;
         _chapter = chapter;
