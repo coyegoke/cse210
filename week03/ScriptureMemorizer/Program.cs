@@ -30,3 +30,6 @@ while (!selectedScripture.IsCompletelyHidden())
 
     selectedScripture.HideRandomWords(2);
 }
+
+//The program exceed the requirements by having a library of scriptures to choose
+// from when the program restarts.
