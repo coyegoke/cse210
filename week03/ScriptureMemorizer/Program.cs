@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-//creates a list of scripture objects for each selcetion.
+//creates a list(library) of scripture objects for each selcetion.
 List<Scripture> scriptures = new List<Scripture>
         {
             new Scripture(new Reference("John", 3, 16), "For God so loved the world that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life."),
