@@ -6,7 +6,7 @@ public class Program
     public static void Main(string[] args)
     {
         // Method to create addresses (USA and Non USA)
-        Address usaAddress = new Address("123 Main St", "Anytown", "CA", "USA");
+        Address usaAddress = new Address("580 California Street", "San Francisco", "CA", "USA");
         Address nonUsaAddress = new Address("Road 12", "House 28, O.A.U, Ife", "Osun State", "Nigeria");
 
         // Method to create customers (USA and Non USA)
