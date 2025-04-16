@@ -63,4 +63,4 @@ class Program
     }
 }
 
-// Description: This program exceeds the base requirements by keeping track of how many times each activity was performed.
+// Description: This program exceeds the core requirements by keeping track of how many times each activity was performed.
